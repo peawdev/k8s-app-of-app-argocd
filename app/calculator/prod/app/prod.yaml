@@ -16,7 +16,7 @@ spec:
       valueFiles:
         - values.yaml
   destination:
-    server: gke_k8s-ms-dev_asia-southeast1_cluster-demo
+    server: https://34.142.138.192
     namespace: peaw-dev
   syncPolicy:
     automated:
