@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: calculator-prod-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:peawdev/k8s-calculator-prod.git
+    targetRevision: main
+    path: ./
+    # directory:
+    #   recurse: true
+    helm:
+      releaseName: calculator-prod
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: peaw-prod
+  syncPolicy:
+    automated:
+      prune: true
