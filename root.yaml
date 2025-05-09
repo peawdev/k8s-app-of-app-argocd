@@ -12,7 +12,7 @@ spec:
     directory:
       recurse: true
   destination:
-    server: gke_k8s-ms-dev_asia-southeast1_cluster-demo-2
+    server: gke_k8s-ms-dev_asia-southeast1_cluster-demo
     namespace: default
   syncPolicy:
     automated:

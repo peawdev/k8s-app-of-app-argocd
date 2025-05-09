@@ -16,8 +16,8 @@ spec:
       valueFiles:
         - values.yaml
   destination:
-    server: gke_k8s-ms-dev_asia-southeast1_cluster-demo-2
-    namespace: peaw-prod
+    server: gke_k8s-ms-dev_asia-southeast1_cluster-demo
+    namespace: peaw-dev
   syncPolicy:
     automated:
       prune: true

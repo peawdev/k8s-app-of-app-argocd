@@ -10,8 +10,8 @@ spec:
     targetRevision: main
     path: ./
   destination:
-    server: https://kubernetes.default.svc
-    namespace: peaw-prod
+    server: gke_k8s-ms-dev_asia-southeast1_cluster-demo
+    namespace: peaw-dev
   syncPolicy:
     automated:
       prune: true
