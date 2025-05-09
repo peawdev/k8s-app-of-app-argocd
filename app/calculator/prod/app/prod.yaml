@@ -16,7 +16,7 @@ spec:
       valueFiles:
         - values.yaml
   destination:
-    server: https://kubernetes.default.svc
+    server: gke_k8s-ms-dev_asia-southeast1_cluster-demo-2
     namespace: peaw-prod
   syncPolicy:
     automated:
